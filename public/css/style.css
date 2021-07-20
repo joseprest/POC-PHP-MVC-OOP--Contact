@@ -1,0 +1,48 @@
+table {
+  position: relative;
+  margin-bottom: 20px;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+}
+td {
+  padding: 0.5rem;
+}
+td a {
+  text-decoration: none;
+  padding: 0 0.5rem;
+}
+th {
+  cursor: pointer;
+}
+.a-link {
+  text-decoration: none;
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+.main {
+  margin: 0.5rem 1rem;
+}
+
+.form-control {
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+label {
+  font-weight: 500;
+  font-size: 11px;
+  color: blue;
+  transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}

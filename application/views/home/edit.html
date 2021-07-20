@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Address Book</title>
+    <meta name="description" content="Build a simple Adressbook" />
+    <link rel="stylesheet" href="public/css/style.css" />
+  </head>
+  <body>
+    <div>
+      <h5>Update contract</h5>
+      <form action="/?a=update" method="POST">
+        <div class="form-group">
+          <label for="name" class="control-label">Name</label>
+          <div class="">
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Name"
+              name="name"
+              value="<?= $contact['name']?>"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="address" class="control-label">Address</label>
+          <div class="">
+            <input
+              type="text"
+              class="form-control"
+              id="address"
+              value="<?= $contact['address'] ?>"
+              placeholder="Address"
+              name="address"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="phone" class="control-label">Phone</label>
+          <div class="">
+            <input
+              type="number"
+              class="form-control"
+              id="phone"
+              placeholder="Phone"
+              name="phone"
+              value="<?= $contact['phone'] ?>"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email" class="control-label">E-Mail</label>
+          <div class="">
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              value="<?= $contact['email'] ?>"
+              placeholder="E-Mail"
+              name="email"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="hidden" name="id" value="<?= $contact['id'] ?>" />
+          <input type="submit" class="form-control" value="Update" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

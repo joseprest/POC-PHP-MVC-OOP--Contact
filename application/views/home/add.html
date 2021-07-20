@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add a contract: Address Book</title>
+    <meta name="description" content="Build a simple Adressbook" />
+    <link rel="stylesheet" href="public/css/style.css" />
+  </head>
+  <body>
+    <div>
+      Add contract
+      <form action="/?a=insert" method="POST">
+        <div class="form-group">
+          <label for="name" class="control-label">Name</label>
+          <div class="">
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Name"
+              name="name"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="address" class="control-label">Address</label>
+          <div class="">
+            <input
+              type="text"
+              class="form-control"
+              id="address"
+              placeholder="Address"
+              name="address"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="phone" class="control-label">Phone</label>
+          <div class="">
+            <input
+              type="number"
+              class="form-control"
+              id="phone"
+              placeholder="Phone"
+              name="phone"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email" class="control-label">E-Mail</label>
+          <div class="">
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="E-Mail"
+              name="email"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="submit" class="form-control" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
